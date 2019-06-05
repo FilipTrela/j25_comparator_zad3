@@ -5,14 +5,14 @@ import java.util.Comparator;
 public class ComparatorDrużynaPiłkarska implements Comparator<DrużynaPiłkarska> {
 
     public int compare(DrużynaPiłkarska o1, DrużynaPiłkarska o2) {
-        int liczbaPunktow = Integer.compare(o1.getLiczbaPunktow(), o2.getLiczbaPunktow());
+        int liczbaPunktow = Integer.compare(o2.getLiczbaPunktow(), o1.getLiczbaPunktow());
         switch (liczbaPunktow) {
             case 1:
                 return 1;
             case -1:
                 return -1;
         }
-        int liczbaBramekTrafionych = Integer.compare(o1.getBramkiTrafione(), o2.getBramkiTrafione());
+        int liczbaBramekTrafionych = Integer.compare(o2.getBramkiTrafione(), o1.getBramkiTrafione());
         switch (liczbaBramekTrafionych) {
             case 1:
                 return -1;
